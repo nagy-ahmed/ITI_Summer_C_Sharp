@@ -1,4 +1,5 @@
-﻿using System.Xml.Schema;
+﻿using System.Runtime.Intrinsics.X86;
+using System.Xml.Schema;
 
 namespace Day6
 {
@@ -88,14 +89,6 @@ namespace Day6
             return new TorF(id, body, mark);
         }
     }
-    class MyClass
-    {
-        public int MyProperty { get; set; }
-    }
-    class MyClass1 : MyClass
-    {
-        public int id { get; set; }
-    }
     internal class Program
     {
         static void Main(string[] args)
@@ -122,7 +115,6 @@ namespace Day6
             {
                 data[i].show();
             }
-
         }
     }
 }
